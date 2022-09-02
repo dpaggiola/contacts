@@ -1,0 +1,6 @@
+C:\Users\Daniel\source\repos\Contacts\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Daniel\source\repos\Contacts\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Daniel\source\repos\Contacts\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Daniel\source\repos\Contacts\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\Contacts\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Daniel\source\repos\Contacts\BusinessLogic\obj\Debug\BusinessLogic.pdb
