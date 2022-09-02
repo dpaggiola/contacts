@@ -11,5 +11,18 @@ namespace BusinessLogic.Test
             var contact = new Contact();
             Assert.IsNotNull(contact);
         }
+
+        [TestMethod]
+        public void SetContactNameTest()
+        {
+            //Arrange
+            Contact contact = new Contact();
+
+            //Act
+            contact.Name = "Pepe";
+
+            //Assert
+            Assert.AreEqual("Pepe", contact.Name, "Name should be Pepe");
+        }
     }
 }
