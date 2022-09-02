@@ -41,5 +41,18 @@ namespace BusinessLogic.Test
             Assert.AreEqual(birthday, contact.Birthday, $"Birthday should be {birthday}");
 
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TooOldBirthdayTest()
+        {
+            //Arrange
+            DateTime limit = new DateTime(1900, 1, 1);
+            var contact = new Contact();
+
+            //Act
+            contact.Birthday = limit;
+
+        }
     }
 }
