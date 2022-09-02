@@ -3,10 +3,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace BusinessLogic.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class ContactTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void NewContactTest()
         {
         }
     }
