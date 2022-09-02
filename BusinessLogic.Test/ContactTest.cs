@@ -8,6 +8,8 @@ namespace BusinessLogic.Test
         [TestMethod]
         public void NewContactTest()
         {
+            var contact = new Contact();
+            Assert.IsNotNull(contact);
         }
     }
 }
