@@ -4,6 +4,7 @@ namespace BusinessLogic
 {
     public class Contact
     {
+        private static readonly DateTime MinBirthdayDate = new DateTime(1910, 1, 1);
         private DateTime birthday;
 
         public Contact()
@@ -13,10 +14,10 @@ namespace BusinessLogic
         public string Name { get; set; }
         public DateTime Birthday { 
             get => birthday; 
-            set { 
-                if (value <= new DateTime(1910, 1, 1))
+            set {
+                if (value <= MinBirthdayDate)
                 {
-                    throw new ArgumentException($"Birthday must be after {new DateTime(1910, 1, 1)}");
+                    throw new ArgumentException($"Birthday must be after {MinBirthdayDate}");
                 }
                 birthday = value;
             } 
