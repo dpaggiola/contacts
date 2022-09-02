@@ -16,13 +16,14 @@ namespace BusinessLogic.Test
         public void SetContactNameTest()
         {
             //Arrange
+            string aName = "Pepe";
             Contact contact = new Contact();
 
             //Act
-            contact.Name = "Pepe";
+            contact.Name = aName;
 
             //Assert
-            Assert.AreEqual("Pepe", contact.Name, "Name should be Pepe");
+            Assert.AreEqual(aName, contact.Name, $"Name should be {aName}");
         }
     }
 }
