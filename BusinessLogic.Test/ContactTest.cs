@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace BusinessLogic.Test
 {
@@ -24,6 +25,21 @@ namespace BusinessLogic.Test
 
             //Assert
             Assert.AreEqual(aName, contact.Name, $"Name should be {aName}");
+        }
+
+        [TestMethod]
+        public void SetBirthdayTest()
+        {
+            //Arrange
+            DateTime birthday = new DateTime(1997, 10, 7);
+            var contact = new Contact();
+
+            //Act
+            contact.Birthday = birthday;
+
+            //Assert
+            Assert.AreEqual(birthday, contact.Birthday, $"Birthday should be {birthday}");
+
         }
     }
 }
