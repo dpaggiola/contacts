@@ -5,5 +5,7 @@
         public Contact()
         {
         }
+
+        public string Name { get; set; }
     }
 }
